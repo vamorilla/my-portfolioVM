@@ -12,7 +12,7 @@ export const Projects = () => {
     const projects = [
         {
             title: "Videogame",
-            description: "Video juego retro realizado con React.",
+            description: "Video juego retro realizado con React. Solo para Desktop o notebook",
             imgUrl: proy1,
             link: "https://slidetheworm.netlify.app/"
         },
@@ -30,7 +30,7 @@ export const Projects = () => {
         },
         {
             title: "Conversor de texto a voz",
-            description: "Narrador utilizando API SpeechSynthesis, en donde logica escrita en JavaScript toma el texto ingresado por el usuario y le da salida mediante dispositivos de audio.",
+            description: "Narrador utilizando API SpeechSynthesis, en donde logica escrita en JavaScript toma el texto ingresado por el usuario y le da salida mediante dispositivos de audio.No disponible para Mobile",
             imgUrl: proy4,
             link: "https://narradorvm.netlify.app/"
         },
