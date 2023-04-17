@@ -44,7 +44,7 @@ export const Projects = () => {
             title: "Pelispedia",
             description: "Utilizando React realizamos este proyecto de enciclopedia de peliculas, en el marco del Curso React de Codo a Codo.",
             imgUrl: proy7,
-            link: "https://pelispedia.netlify.app/login"
+            link: "https://pelispedia.netlify.app/peliculas"
         }
     ];
 
