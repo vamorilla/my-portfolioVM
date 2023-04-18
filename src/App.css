@@ -75,6 +75,10 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active{
   opacity: 1;
 }
 
+.logoVM{
+  width: 40px;
+}
+
 span.navbar-text{
   display: flex;
   align-items: center;

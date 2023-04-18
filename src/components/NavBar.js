@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import logoVM from '../assets/logoVM.svg'
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -27,7 +28,7 @@ export const NavBar = () => {
         <Navbar expand="lg" className={scroll ? 'scroll' : ''}>
           <Container>
             <Navbar.Brand href="#home">
-                V|M
+                <img src={logoVM} alt="logoVM" className="logoVM"/>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
