@@ -6,19 +6,21 @@ import proy4 from "../assets/projectsImg/proy4.png";
 import proy5 from "../assets/projectsImg/proy5.png";
 import proy7 from "../assets/projectsImg/proy7.jpg";
 import { ProjectCard } from "./ProjectCard";
+import { useTranslation } from "react-i18next";
 
 export const Projects = () => {
 
+    const [t] = useTranslation("global");
     const projects = [
         {
-            title: "Videogame",
-            description: "Video juego retro realizado con React. Solo para Desktop o notebook",
+            title: t("projects.videogame-title"),
+            description: t("projects.videogame-description"),
             imgUrl: proy1,
             link: "https://slidetheworm.netlify.app/"
         },
         {
-            title: "Lista de Pokemones",
-            description: "Paginación realizada con Fetch, consumiendo recursos de la API 'PokeAPI'.",
+            title: t("projects.list-pokemons-title"),
+            description: t("projects.list-pokemons-description"),
             imgUrl: proy2,
             link: "https://pokeapivm.netlify.app/"
         },
@@ -29,20 +31,20 @@ export const Projects = () => {
             link: "https://github.com/vamorilla"
         },
         {
-            title: "Conversor de texto a voz",
-            description: "Narrador utilizando API SpeechSynthesis, en donde logica escrita en JavaScript toma el texto ingresado por el usuario y le da salida mediante dispositivos de audio.No disponible para Mobile",
+            title: t("projects.text-to-speech-title"),
+            description: t("projects.text-to-speech-description"),
             imgUrl: proy4,
             link: "https://narradorvm.netlify.app/"
         },
         {
-            title: "Generador de QR",
-            description: "Este generador está realizado con lógica escrita en JavaScript, consumiendo datos de la API 'qrserver'.",
+            title: t("projects.qr-generator-title"),
+            description: t("projects.qr-generator-description"),
             imgUrl: proy5,
             link: "https://qrgeneratorvm.netlify.app/"
         },
         {
-            title: "Pelispedia",
-            description: "Utilizando React realizamos este proyecto de enciclopedia de peliculas, en el marco del Curso React de Codo a Codo.",
+            title: t("projects.pelispedia-title"),
+            description: t("projects.pelispedia-description"),
             imgUrl: proy7,
             link: "https://pelispedia.netlify.app/peliculas"
         }
@@ -51,7 +53,7 @@ export const Projects = () => {
     return(
         <section className="projects" id="projects">
             <Container>
-                <h2 className="title-project">Proyectos</h2>
+                <h2 className="title-project">{t("projects.h2")}</h2>
                 <div className="contenedor-cards">
                     <div className="cards">
                         {
@@ -67,7 +69,7 @@ export const Projects = () => {
                     </div>
                 </div>
             </Container>
-            <button className="btn-github"><a href="https://github.com/vamorilla" rel="noreferrer" target="_blank">Mis Proyectos</a></button>
+            <button className="btn-github"><a href="https://github.com/vamorilla" rel="noreferrer" target="_blank">{t("projects.btn")}</a></button>
         </section>
     )
 }

@@ -10,8 +10,11 @@ import angular from "../assets/skills/angular.svg";
 import react from "../assets/skills/react.svg";
 import git from "../assets/skills/git.svg";
 import mysql from "../assets/skills/mysql.svg";
+import { useTranslation } from "react-i18next";
 
 export const Skills = () => {
+    const [t] = useTranslation("global");
+
     const responsive = {
         superLargeDesktop: {
           // the naming can be any, depends on you.
@@ -39,7 +42,7 @@ export const Skills = () => {
                     <Col>
                         <div className="skill-box">
                             <h2>
-                                Habilidades
+                                {t("skills.h2")}
                             </h2>
                             <Carousel responsive={responsive} infinite="true" className="skill-slider">
                                 <div className="item">

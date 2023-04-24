@@ -1,11 +1,13 @@
 import { useState, useEffect, useRef } from "react";
 import { Col, Container, Row} from "react-bootstrap";
 import { ArrowDownCircle } from "react-bootstrap-icons";
+import { useTranslation } from "react-i18next";
 
 export const Banner = () => {
+    const [t] = useTranslation("global");
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Desarrolladora web"];
+    const toRotate = [t("banner.web-developer")];
     const [delta, setDelta] = useState(180 - Math.random() * 100);
     const [text, setText] = useState('');
     const timePeriod = 2000;
@@ -52,8 +54,8 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <h1>{`Hola soy Vanesa! `}<br/><span className="wrap">{text}</span></h1>  
-                        <p> Dedicada al desarrollo de aplicaciones web desde el año 2020, enfocada y decidida, autodidacta y en la constante búsqueda de aprender e incorporar nuevos conocimientos. Soy una persona que disfruta del trabajo en equipo, siempre dando lo mejor para alcanzar los objetivos.</p>
+                        <h1>{t("banner.h1")}<br/><span className="wrap">{text}</span></h1>  
+                        <p>{t("banner.p")}.</p>
                         <button ref={btnEl} onClick={scrollToSkills}><ArrowDownCircle /></button>
                     </Col>
                 </Row>

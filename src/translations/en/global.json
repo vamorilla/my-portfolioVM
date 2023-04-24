@@ -1,0 +1,36 @@
+{
+    "nav": {
+        "home": "Home",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "banner": {
+        "h1": "Hello I'm Vanesa!",
+        "web-developer": "Web developer",
+        "p": "Dedicated to the development of web applications since 2020, focused and determined, self-taught and in the constant search to learn and incorporate new knowledge. I am a person who enjoys teamwork, always giving my best to achieve goals."
+    },
+    "footer": {
+        "p": "Site made with "
+    },
+    "projectCard": {
+        "a": "See"
+    },
+    "projects": {
+        "videogame-description": "Retro video game made with React. Only for Desktop or notebook",
+        "list-pokemons-description": "Pagination done with Fetch, consuming 'PokeAPI' API resources.",
+        "text-to-speech-description": "Narrator using SpeechSynthesis API, where logic written in JavaScript takes the text entered by the user and outputs it through audio devices.Not available for Mobile.",
+        "qr-generator-description": "This generator is made with logic written in JavaScript, consuming data from the 'qrserver' API.",
+        "pelispedia-description": "Using React we carried out this movie encyclopedia project, within the framework of the React Side by Side Course.",
+        "videogame-title": "Videogame",
+        "list-pokemons-title": "Pokemon list",
+        "text-to-speech-title": "Text to speech converter",
+        "qr-generator-title": " QR Generator",
+        "pelispedia-title": "Pelispedia",
+        "h2": "Projects",
+        "btn": "My Projects"
+    },
+    "skills": {
+        "h2": "Skills"
+    }
+}
